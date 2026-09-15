@@ -24,7 +24,7 @@ def build_animation_page() -> str:
         ]
     )
 
-    javascript = "\n".join(
+    javascript = "</script><script>".join(
         [
             load_text("app.js"),
             load_text("cinema.js"),
