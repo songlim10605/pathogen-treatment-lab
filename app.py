@@ -5,7 +5,7 @@ import streamlit.components.v1 as components
 
 
 BASE_DIR = Path(__file__).resolve().parent
-WEB_DIR = BASE_DIR / "web"
+_DIR = BASE_DIR / "web"
 
 
 def load_text(filename: str) -> str:
