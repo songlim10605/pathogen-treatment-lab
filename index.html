@@ -1,1 +1,107 @@
-#treatment-lab{--lab-accent:#78b8ff;background:#edf2f3;color:#102a33;padding:90px max(3vw,20px)}.lab-shell{max-width:1240px;margin:auto}.lab-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:28px}.lab-head h2{font-size:clamp(32px,4vw,52px);line-height:1.12;letter-spacing:-.045em;margin:4px 0 10px}.lab-head p{max-width:740px;margin:0;color:#50666e;font-size:16px}.lab-badge{padding:10px 14px;border:1px solid #9cb1b6;border-radius:8px;background:#fff;font-weight:750;font-size:13px;white-space:nowrap}.lab-pathogens{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:16px}.lab-pathogens button{padding:14px;border:1px solid #b9c8cb;background:#f7faf9;border-radius:9px;font-size:16px;font-weight:800;color:#456168}.lab-pathogens button[aria-selected=true]{background:#102b37;color:white;border-color:var(--lab-accent);box-shadow:inset 0 -4px var(--lab-accent)}.lab-grid{display:grid;grid-template-columns:360px minmax(0,1fr);gap:16px}.lab-panel,.lab-results{background:#fff;border:1px solid #cdd8da;border-radius:12px;box-shadow:0 14px 40px #243d4510}.lab-panel{padding:24px;align-self:start}.lab-panel h3{font-size:22px;margin:0 0 6px}.lab-panel>p{color:#5c7077;margin:0 0 20px}.lab-field{border:0;padding:0;margin:22px 0}.lab-field legend{font-weight:850;margin-bottom:10px}.target-list{display:grid;gap:8px}.target-choice{display:grid;grid-template-columns:22px 1fr;gap:0 10px;padding:12px;border:1px solid #d1dcde;border-radius:8px;cursor:pointer}.target-choice:has(input:checked){border-color:var(--lab-accent);background:color-mix(in srgb,var(--lab-accent) 9%,white)}.target-choice input{grid-row:1/3;margin:5px 0;width:17px;height:17px;accent-color:#176b78}.target-choice strong{font-size:15px}.target-choice small{color:#647980;line-height:1.35}.timing-line{display:flex;align-items:center;justify-content:space-between}.timing-line output{font-size:20px;font-weight:900;color:#126679}.lab-field input[type=range]{width:100%;accent-color:#147383}.lab-run{width:100%;padding:14px;border:0;border-radius:8px;background:#116e79;color:white;font-weight:900;font-size:16px}.lab-run:disabled{opacity:.55}.lab-reset{width:100%;margin-top:8px;padding:10px;border:1px solid #bdcccf;border-radius:8px;background:white}.lab-assumption{font-size:13px!important;line-height:1.5;margin-top:18px!important;padding:12px;background:#f1f5f4;border-left:3px solid #2b8790}.lab-results{padding:20px;min-width:0}.lab-scene{display:grid;grid-template-columns:1fr 1fr;gap:8px}.lab-chamber{position:relative;background:#081724;border-radius:9px;overflow:hidden;min-height:280px;border:1px solid #233f50}.lab-chamber h4{position:absolute;z-index:2;left:14px;top:10px;margin:0;color:white;font-size:14px}.lab-chamber canvas{width:100%;height:280px;display:block}.lab-therapy-flash{position:absolute;right:12px;top:10px;font-size:12px;background:#beeaff;color:#102b3b;padding:4px 8px;border-radius:5px}.lab-player{display:flex;align-items:center;gap:10px;margin:12px 0}.lab-player button{border:1px solid #9eb1b7;background:#fff;border-radius:7px;padding:7px 12px}.lab-player input{flex:1;accent-color:#16778a}.lab-player span{font-variant-numeric:tabular-nums;font-weight:700;font-size:14px;min-width:62px}.lab-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:15px 0}.lab-metric{border:1px solid #d7e0e1;border-radius:8px;padding:12px}.lab-metric small{display:block;color:#62777e}.lab-metric strong{font-size:22px}.lab-metric em{display:block;font-size:12px;font-style:normal;color:#647a80}.lab-chart-wrap{border:1px solid #d4dfe0;border-radius:9px;padding:12px}.lab-chart-wrap h4{margin:0 0 8px;font-size:15px}.lab-chart-wrap canvas{width:100%;height:210px}.lab-conclusion{margin-top:14px;padding:16px;background:#102b37;color:#dcecf0;border-radius:8px;line-height:1.65}.lab-conclusion strong{color:#9be7df}.lab-limit{font-size:13px;color:#5f747b;line-height:1.6;margin:14px 0 0}.lab-table{margin-top:18px;overflow:auto}.lab-table table{min-width:620px;box-shadow:none}.lab-table th,.lab-table td{padding:12px 14px;font-size:14px}.lab-table thead th{background:#173743}.lab-hypothesis{margin-top:20px;padding:18px;border:1px dashed #8fa9ae;border-radius:9px;background:#f8fbfa}.lab-hypothesis h3{margin:0 0 8px;font-size:17px}.lab-hypothesis p{margin:0;color:#526b72}.lab-status{min-height:24px;color:#0b6972;font-size:14px;margin:8px 0}@media(max-width:950px){.lab-grid{grid-template-columns:1fr}.lab-panel{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}.lab-panel h3,.lab-panel>p,.lab-panel .lab-run,.lab-panel .lab-reset,.lab-panel .lab-assumption{grid-column:1/-1}}@media(max-width:650px){#treatment-lab{padding:65px 14px}.lab-head{display:block}.lab-badge{display:inline-block;margin-top:14px}.lab-pathogens button{font-size:14px;padding:11px 5px}.lab-pathogens small{display:none}.lab-panel{display:block;padding:18px}.lab-scene{grid-template-columns:1fr}.lab-chamber{min-height:230px}.lab-chamber canvas{height:230px}.lab-metrics{grid-template-columns:1fr}.lab-chart-wrap canvas{height:190px}}
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="세균·바이러스·프리온의 질병 발생 기전과 치료 차이를 비교하는 교육용 앱" />
+  <title>보이지 않는 침입자들</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="cinema.css?v=3" />
+  <link rel="stylesheet" href="treatment-lab.css?v=1" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="처음으로"><span class="brand-mark">µ</span><span>병원체 학습실</span></a>
+    <nav id="nav" aria-label="주요 메뉴">
+      <a href="#learn">기전 학습</a><a href="#treatment-lab">치료 실험</a><a href="#compare">한눈에 비교</a><a href="#quiz">이해도 확인</a>
+    </nav>
+    <div class="progress-pill"><span>학습 진행</span><strong id="progressText">0%</strong></div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">INTERACTIVE BIOLOGY LAB</p>
+        <h1>눈에 보이지 않는 존재는<br><em>어떻게 질병을 만들까?</em></h1>
+        <p class="lead">세균·바이러스·프리온은 모두 질병을 일으킬 수 있지만, 정체도 퍼지는 방식도 다릅니다. 세 가지 경로를 직접 따라가며 치료법이 다른 이유를 발견해 보세요.</p>
+        <div class="hero-actions"><button class="primary" data-go="quiz" data-mode="pre">사전 퀴즈 시작</button><button class="secondary" data-go="learn">바로 학습하기</button></div>
+        <p class="microcopy">약 8분 · 고등학교 생명과학 수준 · 결과는 이 기기에만 저장됩니다</p>
+      </div>
+      <div class="hero-visual" aria-label="세균, 바이러스, 프리온을 표현한 움직이는 모식도">
+        <div class="cell"><span class="nucleus"></span></div>
+        <div class="microbe bacteria-orb"><i></i><i></i><i></i></div>
+        <div class="microbe virus-orb"><b></b></div>
+        <div class="microbe prion-orb">⌁</div>
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+      </div>
+    </section>
+
+    <section class="stat-strip" aria-label="핵심 차이 요약">
+      <div><span class="dot bacteria"></span><strong>세균</strong><small>세포 · 스스로 분열</small></div>
+      <div><span class="dot virus"></span><strong>바이러스</strong><small>감염성 입자 · 숙주 이용</small></div>
+      <div><span class="dot prion"></span><strong>프리온</strong><small>비정상 단백질 · 구조 전파</small></div>
+    </section>
+
+    <section id="learn" class="section">
+      <div class="section-heading"><p class="eyebrow">01 · MECHANISM</p><h2>질병 발생 과정을 따라가 보세요</h2><p>같은 형식으로 살펴보면 근본적인 차이가 선명해집니다.</p></div>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-pathogen="bacteria" role="tab">세균</button>
+        <button class="tab" data-pathogen="virus" role="tab">바이러스</button>
+        <button class="tab" data-pathogen="prion" role="tab">프리온</button>
+      </div>
+      <div class="mechanism-card">
+        <div class="mechanism-info">
+          <span id="typeBadge" class="type-badge">세포성 생물</span>
+          <h3 id="pathogenTitle">세균은 스스로 분열합니다</h3>
+          <p id="pathogenIntro"></p>
+          <div class="step-counter"><span id="stepNumber">1</span><small>/ 6단계</small></div>
+          <h4 id="stepTitle"></h4><p id="stepBody"></p>
+          <div class="step-controls"><button id="prevStep" aria-label="이전 단계">←</button><div id="stepDots"></div><button id="nextStep" aria-label="다음 단계">→</button></div>
+        </div>
+        <div id="stage" class="stage bacteria-stage" aria-live="polite"></div>
+      </div>
+      <p class="science-note"><strong>과학적 주의:</strong> 이 앱은 대표적인 원리를 단순화한 교육 모델입니다. 모든 세균과 바이러스가 동일한 경로로 질병을 일으키는 것은 아닙니다.</p>
+    </section>
+
+    <section id="compare" class="section alt">
+      <div class="section-heading"><p class="eyebrow">02 · COMPARE</p><h2>차이를 한눈에 연결해 보세요</h2><p>구조의 차이는 증가 방식, 손상 방식, 치료 전략의 차이로 이어집니다.</p></div>
+      <div class="compare-wrap"><table>
+        <thead><tr><th>비교 기준</th><th class="bacteria-col">세균</th><th class="virus-col">바이러스</th><th class="prion-col">프리온</th></tr></thead>
+        <tbody>
+          <tr><th>정체</th><td>하나의 세포</td><td>핵산+단백질 입자</td><td>비정상 단백질</td></tr>
+          <tr><th>유전물질</th><td>있음</td><td>있음</td><td>없음</td></tr>
+          <tr><th>증가 방식</th><td>세포분열</td><td>숙주세포에서 복제</td><td>정상 단백질 변형 유도</td></tr>
+          <tr><th>주요 손상</th><td>독소·염증·조직 침범</td><td>세포 기능 방해·면역반응</td><td>비정상 단백질 축적</td></tr>
+          <tr><th>대표 사례</th><td>결핵, 세균성 폐렴</td><td>독감, 코로나19</td><td>크로이츠펠트-야코프병</td></tr>
+          <tr class="treatment-row"><th>치료 접근</th><td>일부 항생제</td><td>일부 항바이러스제</td><td>확립된 치료법 매우 제한적</td></tr>
+        </tbody>
+      </table></div>
+      <div class="cause-chain"><button id="chainBtn">치료법이 다른 이유 보기</button><div id="chainResult" hidden><span>구조</span><b>→</b><span>증가 방식</span><b>→</b><span>공격 가능한 표적</span><b>→</b><span>치료 전략</span></div></div>
+    </section>
+
+    <section id="myth" class="section">
+      <div class="section-heading"><p class="eyebrow">03 · MEDICAL MYTH</p><h2>헷갈리는 의학 상식을 판별해 보세요</h2><p>카드를 선택하면 근거와 함께 정답이 나타납니다.</p></div>
+      <div id="mythCard" class="myth-card">
+        <span id="mythCount">1 / 6</span><h3 id="mythStatement"></h3>
+        <div class="ox-buttons"><button data-answer="true">O <small>맞다</small></button><button data-answer="false">X <small>틀리다</small></button></div>
+        <div id="mythFeedback" class="feedback" hidden></div>
+      </div>
+    </section>
+
+    <section id="quiz" class="section quiz-section">
+      <div class="section-heading"><p class="eyebrow">04 · CHECK</p><h2>이해도 변화를 확인해 보세요</h2><p>사전·사후에 같은 핵심 개념을 확인하여 학습 전후의 변화를 비교합니다.</p></div>
+      <div id="quizStart" class="quiz-start">
+        <div class="score-preview"><div><small>사전 점수</small><strong id="prePreview">—</strong></div><span>→</span><div><small>사후 점수</small><strong id="postPreview">—</strong></div></div>
+        <div><button class="secondary" data-quiz="pre">사전 퀴즈</button><button class="primary" data-quiz="post">사후 퀴즈</button></div>
+      </div>
+      <div id="quizBox" class="quiz-box" hidden></div>
+      <div id="resultBox" class="result-box" hidden></div>
+    </section>
+  </main>
+
+  <footer><strong>보이지 않는 침입자들</strong><p>세균·바이러스·프리온 질병 발생 기전 비교 교육 모델</p><small>의학적 진단이나 치료 지침이 아닌 교육용 자료입니다.</small></footer>
+  <script src="app.js"></script>
+  <script src="cinema.js?v=3"></script>
+  <script src="treatment-lab.js?v=1"></script>
+</body>
+</html>
